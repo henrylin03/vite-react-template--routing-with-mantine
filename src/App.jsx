@@ -1,5 +1,9 @@
-import "./styles/global.css";
+import { Outlet } from "react-router-dom";
 
-const App = () => <h1>Our First Test</h1>;
+const App = () => (
+  <>
+    <Outlet context={[]} />
+  </>
+);
 
 export default App;
